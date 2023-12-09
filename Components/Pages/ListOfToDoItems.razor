@@ -1,0 +1,27 @@
+﻿@inject ToDoService toDoService
+@if (ListToDoItems == null)
+{
+    <p>Loading...</p>
+}
+else
+{
+    @foreach (var toDo in ListToDoItems)
+    {
+        @toDo.TaskDesc <span>(Priority=@toDo.Priority)</span>
+        <br />
+    }
+    <br />
+    <br />
+    <br />
+
+}
+@code {
+    List<ToDoItem> ListToDoItems;
+    [Parameter]
+    public int FilterPriority { get; set; } = 100;
+
+    protected override async Task OnInitializedAsync()
+    {
+        ListToDoItems = await toDoService.GetAllToDoItemsAsync(FilterPriority);
+    }
+}

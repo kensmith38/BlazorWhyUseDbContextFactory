@@ -1,0 +1,16 @@
+﻿@page "/showToDos"
+<h3>Highest Priority To-Dos</h3>
+<ListOfToDoItems FilterPriority=1></ListOfToDoItems>
+
+<p>If you use a DbContext rather than a DbContextFactory in the ToDoService, then an InvalidOperationException
+    will be thrown when this page contains TWO (ListOfToItems) components.</p>
+<p>There error message will be InvalidOperationException: A second operation was started on this context instance before
+    a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext.</p>
+
+<p>Solution: Change Program.cs and ToDoService.cs to use DbContextFactory instead of simple DbContext!</p>
+<h3>All To-Dos</h3>
+<ListOfToDoItems></ListOfToDoItems>
+
+@code {
+
+}
