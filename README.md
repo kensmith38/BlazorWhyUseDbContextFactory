@@ -16,11 +16,11 @@ The project is saved using a DbContextFactory, but the code exists in the projec
     <li>Update-Database</li>
   </ul>
 </ol>
-<h3>Steps to switch to DbContextFactory</h3>
+<h3>Steps to switch to DbContext (which will illustrate why this is a bad idea)</h3>
 In Program.cs
 <ol>
-  <li>Comment the line to use AddDbContext</li>
-  <li>Un-comment the line to use AddDbContextFactory</li>
+  <li>Un-comment the line to use AddDbContext</li>
+  <li>Comment the line to use AddDbContextFactory</li>
 </ol>
 In ToDoService.cs
 <ol>
