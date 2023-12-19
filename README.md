@@ -6,7 +6,8 @@ This Blazor Server web app (.NET 8.0) is a simple to-do list which shows a page 
 <li>All to-dos</li>
 <strong>An exception occurs if a simple DbContext is used instead of a DbContextFactory.</strong>
 
-The project is saved using a DbContextFactory, but the code exists in the project to switch to plain DbContext (not factory).
+The project is saved using a DbContextFactory, but the code exists in the project to easily switch to using a plain DbContext (not factory).
+Switching to plain DbContext will throw an exception when the Blazor page is supposed to be displayed.
 <h3>You must create a database in order to run the program</h3>
 <ol>
   <li>Change the Default connection string as appropriate for your environment.</li>
