@@ -30,14 +30,13 @@ namespace BlazorWhyUseDbContextFactory.Components.Data
         }
         
         /*
-        
         // =================================================================
         // Uses DbContext (not a factory)
         //  - make sure Program.cs uses builder.Services.AddDbContext (not AddDbContextFactory)
         // =================================================================
         private readonly AppDbContext dbContext;
         // ================================
-        // Design: Inject 
+        // Design: Inject plain DbContext
         // ================================
         public ToDoService(AppDbContext iDbContext)
         {

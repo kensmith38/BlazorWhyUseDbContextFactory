@@ -1,5 +1,7 @@
-# BlazorWhyUseDbContextFactory
+# BlazorWhyUseDbContextFactory 
+A YouTube video shows what happens if you plain DbContext instead of a DbContextFactory. 
 Show why Blazor Server should use DbContextFactory. 
+The YouTube link: https://youtu.be/4fa9sF97eh8
 
 This Blazor Server web app (.NET 8.0) is a simple to-do list which shows a page with two lists on it:
 <li>High priority to-dos</li>
